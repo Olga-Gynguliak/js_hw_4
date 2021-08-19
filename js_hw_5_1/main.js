@@ -5,6 +5,7 @@
 
 
 // -- отримує текст з блоку з id "rules"
+
 // const aaa = document.getElementById('rules');
 // console.log(aaa.innerText)
 
@@ -19,6 +20,7 @@
 // *****************************************************************************************
 
 // // -- замініть текст параграфа з id 'rules' на будь-який інший
+
 // document.getElementById("rules").ondblclick = function () {changeText()};
 // function changeText(){
 //   document.getElementById("rules").innerHTML = "New Первое правило Бойцовского клуба";
@@ -51,24 +53,30 @@
 // ********************************************************************************************************************************************
 
 // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
-// const el = document.getElementById('rules');
-// console.log(el);
+
+const el = document.getElementById('rules');
+console.log(el.classList.value);
 
 // ********************************************************************************************************************************************
 
 // -- отримати всі елементи з класом fc_rules. визначити їм 2 події "клік", одна вивдоить текст елементу, інша довільний ьексь
 
-// function changeText(newText) {
-//     let element = document.getElementsByClassName("fc_rules");
-//     let i;
-//    for (i = 0; i < element.length; i++){
-//        element[i].textContent = newText;
+// function changeText() {
+//     let elements = document.getElementsByClassName("fc_rules");
+//    for (let item of elements){
+//        item.addEventListener('click', () => {
+//            console.log(item.innerText)
+//        })
+//        item.addEventListener('click', () => {
+//            console.log('супер')
+//        })
 //    }
 // }
-
+// changeText()
 // ***********************************************************************************************************************************************
 
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
+
 // myFunction()
 // function myFunction(){
 //   let y = document.getElementsByClassName('fc_rules');
